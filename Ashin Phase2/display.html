@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Properties</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f0f8ff;
+      padding: 20px;
+    }
+    h3 {
+      color: #333;
+    }
+    .block {
+      display: block;
+      background: #ff7675;
+      padding: 10px;
+      margin: 8px 0;
+      color: white;
+    }
+    .inline {
+      display: inline;
+      background: #74b9ff;
+      padding: 5px;
+      color: white;
+    }
+    .inline-block {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      background: #55efc4;
+      margin: 5px;
+      text-align: center;
+      padding-top: 15px;
+    }
+    .none {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<h3>Block Example</h3>
+<div class="block">Block 1</div>
+<div class="block">Block 2</div>
+<h3>Inline Example</h3>
+<p>
+  <span class="inline">Inline 1</span>
+  <span class="inline">Inline 2</span>
+</p>
+<h3>Inline-Block Example</h3>
+<div>
+  <div class="inline-block">Box 1</div>
+  <div class="inline-block">Box 2</div>
+</div>
+<h3>None Example</h3>
+<div class="none">Hidden Text</div>
+</body>
+</html>
