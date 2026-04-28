@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple DOM Example</title>
+</head>
+<body>
+
+<h1 id="title">Hello</h1>
+
+<p class="box">Item 1</p>
+<p class="box">Item 2</p>
+
+<input type="text" id="inp" placeholder="Enter text">
+<br><br>
+
+<button onclick="changeText()">Change Text</button>
+<button onclick="changeStyle()">Change Style</button>
+<button onclick="addElement()">Add</button>
+<button onclick="removeElement()">Remove</button>
+
+<div id="container"></div>
+
+<script>
+function changeText() {
+    var t = document.getElementById("title");
+    var val = document.getElementById("inp").value;
+    t.innerText = val;
+}
+
+function changeStyle() {
+    var items = document.getElementsByClassName("box");
+    for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "red";
+    }
+}
+
+function addElement() {
+    var p = document.createElement("p");
+    p.innerText = "New item";
+    
+    var c = document.querySelector("#container");
+    c.appendChild(p);
+}
+
+function removeElement() {
+    var c = document.querySelector("#container");
+    if (c.lastChild) {
+        c.lastChild.remove();
+    }
+}
+</script>
+
+</body>
+</html>
