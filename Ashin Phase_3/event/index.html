@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Demo</title>
+</head>
+<body>
+
+<h1>JS Event Examples</h1>
+
+<section class="card">
+    <h3>Click Event</h3>
+    <p id="clickText">Press the button below</p>
+    <button id="myBtn">Press Here</button>
+</section>
+
+<section class="card">
+    <h3>Typing Preview</h3>
+    <input type="text" id="liveInput" placeholder="Enter text">
+    <p>Your text: <b id="preview">---</b></p>
+</section>
+
+<section class="card">
+    <h3>Form Check</h3>
+    <form id="myForm">
+        <input type="text" id="nameInput" placeholder="Your name">
+        <button type="submit">Send</button>
+    </form>
+    <small id="formMsg"></small>
+</section>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9caa82;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    width: 280px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #52974f;
+    background-color: rgba(69, 94, 95, 0.678);
+    text-align: center;
+}
+</style>
+
+<script src="script.js"></script>
+
+</body>
+</html>
