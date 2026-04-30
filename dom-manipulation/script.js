@@ -15,7 +15,16 @@ function addTodo() {
   if (value == "") return;
 
   var li = document.createElement("li");
-  li.innerText = value;
+  li.innerText = value + " ";
+
+  var btn = document.createElement("button");
+  btn.innerText = "Remove";
+
+  btn.onclick = function () {
+    li.remove();
+  };
+
+  li.appendChild(btn);
 
   document.getElementById("todoList").appendChild(li);
 }
